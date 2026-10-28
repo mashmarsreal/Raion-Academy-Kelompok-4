@@ -7,7 +7,6 @@ public class Health : MonoBehaviour
     public int maxHealth = 3;
     private int currentHealth;
     public GameObject Coin;
-    public GameObject[] health; 
 
     private void Start()
     {
@@ -19,7 +18,6 @@ public class Health : MonoBehaviour
         currentHealth -= damage;
 
         Debug.Log(gameObject.name + " HP: " + currentHealth);
-        Destroy(health[currentHealth]);
 
         if (currentHealth <= 0)
         {
@@ -36,7 +34,7 @@ public class Health : MonoBehaviour
         }
         if (CompareTag("Player"))
         {
-            Debug.Log($"Test");
+            Debug.Log($"Player Get hit");
         }
 
         Destroy(gameObject);
