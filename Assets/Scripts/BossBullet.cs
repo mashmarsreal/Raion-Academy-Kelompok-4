@@ -8,7 +8,7 @@ public class BossBullet : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // panggil fungsi darah Player (menunggu script Player/Health)
+            // panggil fungsi darah Player 
             Debug.Log("Player kena peluru mini boss!");
             Destroy(gameObject);
         }

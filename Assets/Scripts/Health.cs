@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int maxHealth = 3;
+    public int maxHealth = 20;
     private int currentHealth;
     public GameObject Coin;
 
