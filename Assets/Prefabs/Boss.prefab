@@ -71,8 +71,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.1}
-  m_Size: {x: 2.5, y: 2.3}
+  m_Offset: {x: 0, y: 0.4}
+  m_Size: {x: 3.8, y: 3.4}
 --- !u!50 &4000000000000004
 Rigidbody2D:
   serializedVersion: 5
@@ -140,7 +140,7 @@ MonoBehaviour:
   shootInterval: 5
   spreadAngle: 15
   impactZonePrefab: {fileID: 2000000000000001, guid: b5239e228e404cd090e0faee578be002, type: 3}
-  impactRadius: 1.6
+  impactRadius: 2.2
   visualContainer: {fileID: 4000000000000012}
   visualRenderers: []
 --- !u!1 &4000000000000009
@@ -168,7 +168,7 @@ Transform:
   m_GameObject: {fileID: 4000000000000009}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.35, z: 0}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -255,8 +255,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000020}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46, y: -0.66, z: 0}
-  m_LocalScale: {x: 0.68, y: 0.42, z: 1}
+  m_LocalPosition: {x: -0.65, y: -0.85, z: 0}
+  m_LocalScale: {x: 0.95, y: 0.58, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -303,8 +303,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.46, y: -0.66, z: 0}
-  m_LocalScale: {x: 0.68, y: 0.42, z: 1}
+  m_LocalPosition: {x: 0.65, y: -0.85, z: 0}
+  m_LocalScale: {x: 0.95, y: 0.58, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -351,8 +351,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0, y: 0.05, z: 0}
-  m_LocalScale: {x: 1.85, y: 1.15, z: 1}
+  m_LocalPosition: {x: 0.0, y: 0.15, z: 0}
+  m_LocalScale: {x: 2.55, y: 1.55, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -399,8 +399,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000029}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.68, y: 0.62, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.45, z: 1}
+  m_LocalPosition: {x: -0.92, y: 0.95, z: 0}
+  m_LocalScale: {x: 1.05, y: 0.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -447,8 +447,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000032}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.68, y: 0.62, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.45, z: 1}
+  m_LocalPosition: {x: 0.92, y: 0.95, z: 0}
+  m_LocalScale: {x: 1.05, y: 0.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -495,8 +495,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000035}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.18, y: 0.22, z: 0}
-  m_LocalScale: {x: 0.68, y: 0.75, z: 1}
+  m_LocalPosition: {x: -1.65, y: 0.38, z: 0}
+  m_LocalScale: {x: 0.95, y: 1.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -514,7 +514,7 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.1626, g: 0.1626, b: 0.2, a: 1}
 --- !u!1 &4000000000000038
@@ -543,8 +543,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000038}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.18, y: 0.22, z: 0}
-  m_LocalScale: {x: 0.68, y: 0.75, z: 1}
+  m_LocalPosition: {x: 1.65, y: 0.38, z: 0}
+  m_LocalScale: {x: 0.95, y: 1.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -562,7 +562,7 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.1626, g: 0.1626, b: 0.2, a: 1}
 --- !u!1 &4000000000000041
@@ -591,8 +591,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000041}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.28, y: -0.42, z: 0}
-  m_LocalScale: {x: 0.62, y: 0.72, z: 1}
+  m_LocalPosition: {x: -1.78, y: -0.52, z: 0}
+  m_LocalScale: {x: 0.85, y: 1.0, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -610,7 +610,7 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.1626, g: 0.1626, b: 0.2, a: 1}
 --- !u!1 &4000000000000044
@@ -639,8 +639,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000044}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.28, y: -0.42, z: 0}
-  m_LocalScale: {x: 0.62, y: 0.72, z: 1}
+  m_LocalPosition: {x: 1.78, y: -0.52, z: 0}
+  m_LocalScale: {x: 0.85, y: 1.0, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -658,7 +658,7 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.1626, g: 0.1626, b: 0.2, a: 1}
 --- !u!1 &4000000000000047
@@ -687,8 +687,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000047}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.28, y: -0.22, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.16, z: 1}
+  m_LocalPosition: {x: -1.78, y: -0.22, z: 0}
+  m_LocalScale: {x: 0.95, y: 0.22, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -706,7 +706,7 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.25, g: 0.25, b: 0.28, a: 1}
 --- !u!1 &4000000000000050
@@ -735,8 +735,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000050}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.28, y: -0.22, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.16, z: 1}
+  m_LocalPosition: {x: 1.78, y: -0.22, z: 0}
+  m_LocalScale: {x: 0.95, y: 0.22, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -754,7 +754,7 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.25, g: 0.25, b: 0.28, a: 1}
 --- !u!1 &4000000000000053
@@ -768,7 +768,7 @@ GameObject:
   - component: {fileID: 4000000000000054}
   - component: {fileID: 4000000000000055}
   m_Layer: 0
-  m_Name: Head
+  m_Name: EarOuter_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -783,8 +783,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000053}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0, y: 0.75, z: 0}
-  m_LocalScale: {x: 1.2, y: 0.95, z: 1}
+  m_LocalPosition: {x: -0.58, y: 1.88, z: 0}
+  m_LocalScale: {x: 0.52, y: 0.55, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -802,7 +802,7 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9245, g: 0.4557, b: 0.1448, a: 1}
 --- !u!1 &4000000000000056
@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 4000000000000057}
   - component: {fileID: 4000000000000058}
   m_Layer: 0
-  m_Name: Muzzle_Beard
+  m_Name: EarInner_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -831,8 +831,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000056}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0, y: 0.46, z: 0}
-  m_LocalScale: {x: 1.42, y: 0.38, z: 1}
+  m_LocalPosition: {x: -0.58, y: 1.88, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.38, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -850,9 +850,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1.0, g: 1.0, b: 1.0, a: 1}
+  m_Color: {r: 0.5472, g: 0.2739, b: 0.0939, a: 1}
 --- !u!1 &4000000000000059
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,7 +864,7 @@ GameObject:
   - component: {fileID: 4000000000000060}
   - component: {fileID: 4000000000000061}
   m_Layer: 0
-  m_Name: Nose
+  m_Name: EarOuter_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,8 +879,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000059}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0, y: 0.64, z: 0}
-  m_LocalScale: {x: 0.22, y: 0.15, z: 1}
+  m_LocalPosition: {x: 0.58, y: 1.88, z: 0}
+  m_LocalScale: {x: 0.52, y: 0.55, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -898,9 +898,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.434, g: 0.363, b: 0.363, a: 1}
+  m_Color: {r: 0.9245, g: 0.4557, b: 0.1448, a: 1}
 --- !u!1 &4000000000000062
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 4000000000000063}
   - component: {fileID: 4000000000000064}
   m_Layer: 0
-  m_Name: EyeWhite_L
+  m_Name: EarInner_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -927,8 +927,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000062}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.34, y: 0.78, z: 0}
-  m_LocalScale: {x: 0.32, y: 0.18, z: 1}
+  m_LocalPosition: {x: 0.58, y: 1.88, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.38, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -946,9 +946,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1.0, g: 1.0, b: 1.0, a: 1}
+  m_Color: {r: 0.5472, g: 0.2739, b: 0.0939, a: 1}
 --- !u!1 &4000000000000065
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,7 +960,7 @@ GameObject:
   - component: {fileID: 4000000000000066}
   - component: {fileID: 4000000000000067}
   m_Layer: 0
-  m_Name: EyeWhite_R
+  m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -975,8 +975,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000065}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.34, y: 0.78, z: 0}
-  m_LocalScale: {x: 0.32, y: 0.18, z: 1}
+  m_LocalPosition: {x: 0.0, y: 1.15, z: 0}
+  m_LocalScale: {x: 1.65, y: 1.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -994,9 +994,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1.0, g: 1.0, b: 1.0, a: 1}
+  m_Color: {r: 0.9245, g: 0.4557, b: 0.1448, a: 1}
 --- !u!1 &4000000000000068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 4000000000000069}
   - component: {fileID: 4000000000000070}
   m_Layer: 0
-  m_Name: EyeRed_L
+  m_Name: Muzzle_Beard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1023,8 +1023,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000068}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.34, y: 0.78, z: 0}
-  m_LocalScale: {x: 0.18, y: 0.18, z: 1}
+  m_LocalPosition: {x: 0.0, y: 0.75, z: 0}
+  m_LocalScale: {x: 1.95, y: 0.52, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -1042,9 +1042,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1.0, g: 0.08, b: 0.08, a: 1}
+  m_Color: {r: 1.0, g: 1.0, b: 1.0, a: 1}
 --- !u!1 &4000000000000071
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1056,7 @@ GameObject:
   - component: {fileID: 4000000000000072}
   - component: {fileID: 4000000000000073}
   m_Layer: 0
-  m_Name: EyeRed_R
+  m_Name: Nose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1071,8 +1071,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000071}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.34, y: 0.78, z: 0}
-  m_LocalScale: {x: 0.18, y: 0.18, z: 1}
+  m_LocalPosition: {x: 0.0, y: 0.98, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.22, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -1090,9 +1090,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 7
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1.0, g: 0.08, b: 0.08, a: 1}
+  m_Color: {r: 0.434, g: 0.363, b: 0.363, a: 1}
 --- !u!1 &4000000000000074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1104,7 @@ GameObject:
   - component: {fileID: 4000000000000075}
   - component: {fileID: 4000000000000076}
   m_Layer: 0
-  m_Name: EarOuter_L
+  m_Name: EyeWhite_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1119,8 +1119,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000074}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.42, y: 1.28, z: 0}
-  m_LocalScale: {x: 0.38, y: 0.4, z: 1}
+  m_LocalPosition: {x: -0.46, y: 1.18, z: 0}
+  m_LocalScale: {x: 0.44, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -1138,9 +1138,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 7
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9245, g: 0.4557, b: 0.1448, a: 1}
+  m_Color: {r: 1.0, g: 1.0, b: 1.0, a: 1}
 --- !u!1 &4000000000000077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1152,7 +1152,7 @@ GameObject:
   - component: {fileID: 4000000000000078}
   - component: {fileID: 4000000000000079}
   m_Layer: 0
-  m_Name: EarInner_L
+  m_Name: EyeWhite_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1167,8 +1167,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000077}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.42, y: 1.28, z: 0}
-  m_LocalScale: {x: 0.22, y: 0.28, z: 1}
+  m_LocalPosition: {x: 0.46, y: 1.18, z: 0}
+  m_LocalScale: {x: 0.44, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -1186,9 +1186,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 7
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5472, g: 0.2739, b: 0.0939, a: 1}
+  m_Color: {r: 1.0, g: 1.0, b: 1.0, a: 1}
 --- !u!1 &4000000000000080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,7 +1200,7 @@ GameObject:
   - component: {fileID: 4000000000000081}
   - component: {fileID: 4000000000000082}
   m_Layer: 0
-  m_Name: EarOuter_R
+  m_Name: EyeRed_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1215,8 +1215,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000080}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.42, y: 1.28, z: 0}
-  m_LocalScale: {x: 0.38, y: 0.4, z: 1}
+  m_LocalPosition: {x: -0.46, y: 1.18, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -1234,9 +1234,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 8
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9245, g: 0.4557, b: 0.1448, a: 1}
+  m_Color: {r: 1.0, g: 0.08, b: 0.08, a: 1}
 --- !u!1 &4000000000000083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,7 +1248,7 @@ GameObject:
   - component: {fileID: 4000000000000084}
   - component: {fileID: 4000000000000085}
   m_Layer: 0
-  m_Name: EarInner_R
+  m_Name: EyeRed_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1263,8 +1263,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000083}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.42, y: 1.28, z: 0}
-  m_LocalScale: {x: 0.22, y: 0.28, z: 1}
+  m_LocalPosition: {x: 0.46, y: 1.18, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -1282,9 +1282,9 @@ SpriteRenderer:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 8
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.5472, g: 0.2739, b: 0.0939, a: 1}
+  m_Color: {r: 1.0, g: 0.08, b: 0.08, a: 1}
 --- !u!1 &4000000000000086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,8 +1311,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000086}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48, y: 0.22, z: 0}
-  m_LocalScale: {x: 0.12, y: 0.07, z: 1}
+  m_LocalPosition: {x: 0.66, y: 0.38, z: 0}
+  m_LocalScale: {x: 0.18, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
@@ -1359,8 +1359,8 @@ Transform:
   m_GameObject: {fileID: 4000000000000089}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48, y: 0.28, z: 0}
-  m_LocalScale: {x: 0.12, y: 0.07, z: 1}
+  m_LocalPosition: {x: 0.66, y: 0.46, z: 0}
+  m_LocalScale: {x: 0.18, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4000000000000012}
