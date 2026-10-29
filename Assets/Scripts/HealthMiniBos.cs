@@ -27,12 +27,12 @@ public class MiniBossHealth : MonoBehaviour
     {
         if (LevelManager.instance != null)
         {
-            LevelManager.instance.AddKill();
+        LevelManager.instance.AddKill();
         }
 
         if (Coin != null)
         {
-            Instantiate(Coin, transform.position, Quaternion.identity);
+        Instantiate(Coin, transform.position, Quaternion.identity);
         }
 
         Destroy(gameObject);
