@@ -4,9 +4,10 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     public GameObject PauseUI;
+    public GameObject GameOverUI;
     void Start()
     {
-        
+        closeAll();
     }
 
     void Update()
@@ -16,6 +17,12 @@ public class MenuManager : MonoBehaviour
             Debug.Log("Escape is being held down.");
             Pause();
         }
+    }
+
+    void closeAll()
+    {
+        PauseUI.SetActive(false);
+        GameOverUI.SetActive(false);
     }
 
     public void Pause()
@@ -30,5 +37,16 @@ public class MenuManager : MonoBehaviour
         Time.timeScale = 1;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0;
+        GameOverUI.SetActive(true);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(2);
     }
 }
