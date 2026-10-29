@@ -38,7 +38,7 @@ public class BossController : MonoBehaviour
 
     [Header("Dash Impact Zone")]
     public GameObject impactZonePrefab;
-    public float impactRadius = 1.6f;
+    public float impactRadius = 2.2f;
 
     [Header("Visual References")]
     public Transform visualContainer;
@@ -53,6 +53,7 @@ public class BossController : MonoBehaviour
     private float stateTimer = 0f;
     private Vector2 dashTargetPosition;
     private Vector3 initialVisualLocalPos;
+    private Vector3 initialVisualScale = Vector3.one;
     private BossImpactZone currentImpactZone;
 
     private void Start()
@@ -69,6 +70,7 @@ public class BossController : MonoBehaviour
         if (visualContainer != null)
         {
             initialVisualLocalPos = visualContainer.localPosition;
+            initialVisualScale = visualContainer.localScale;
             if (visualRenderers == null || visualRenderers.Length == 0)
             {
                 visualRenderers = visualContainer.GetComponentsInChildren<SpriteRenderer>();
@@ -77,6 +79,7 @@ public class BossController : MonoBehaviour
         else
         {
             initialVisualLocalPos = Vector3.zero;
+            initialVisualScale = Vector3.one;
             visualRenderers = GetComponentsInChildren<SpriteRenderer>();
         }
 
@@ -136,13 +139,15 @@ public class BossController : MonoBehaviour
             Vector2 direction = ((Vector2)player.position - rb.position).normalized;
             rb.linearVelocity = direction * moveSpeed;
 
-            // Menghadap ke arah pemain
+            // Menghadap ke arah pemain dengan mempertahankan skala visual
             if (visualContainer != null)
             {
+                float sx = Mathf.Abs(initialVisualScale.x);
+                float sy = initialVisualScale.y;
                 if (direction.x > 0.05f)
-                    visualContainer.localScale = new Vector3(-1f, 1f, 1f);
+                    visualContainer.localScale = new Vector3(-sx, sy, 1f);
                 else if (direction.x < -0.05f)
-                    visualContainer.localScale = new Vector3(1f, 1f, 1f);
+                    visualContainer.localScale = new Vector3(sx, sy, 1f);
             }
         }
         else if (currentState == BossState.Dashing)
