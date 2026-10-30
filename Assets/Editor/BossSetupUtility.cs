@@ -45,6 +45,35 @@ public class BossSetupUtility : EditorWindow
         if (!Application.isBatchMode) EditorUtility.DisplayDialog("Sukses!", "Semua aset Boss (GiantCoin, ImpactZone, Projectile, Boss Prefab) dan Scene Boss_Test berhasil dibuat!\n\nBuka Assets/Scenes/Boss_Test.unity untuk langsung menguji pertarungan.", "OK");
     }
 
+    [MenuItem("Raion/Attach Camera Follow to Current Scene Camera")]
+    public static void AttachCameraFollowToActiveScene()
+    {
+        Camera mainCam = Camera.main;
+        if (mainCam == null)
+        {
+            mainCam = Object.FindFirstObjectByType<Camera>();
+        }
+
+        if (mainCam == null)
+        {
+            EditorUtility.DisplayDialog("Error", "Main Camera tidak ditemukan di scene yang sedang aktif!", "OK");
+            return;
+        }
+
+        CameraFollow existing = mainCam.GetComponent<CameraFollow>();
+        if (existing == null)
+        {
+            Undo.AddComponent<CameraFollow>(mainCam.gameObject);
+            mainCam.orthographicSize = 5f;
+            EditorSceneManager.MarkSceneDirty(mainCam.gameObject.scene);
+            EditorUtility.DisplayDialog("Sukses!", "CameraFollow berhasil ditambahkan ke Main Camera!", "OK");
+        }
+        else
+        {
+            EditorUtility.DisplayDialog("Info", "CameraFollow sudah terpasang pada Main Camera.", "OK");
+        }
+    }
+
     private static T LoadAssetByGuid<T>(string guid) where T : UnityEngine.Object
     {
         string path = AssetDatabase.GUIDToAssetPath(guid);
@@ -296,6 +325,7 @@ public class BossSetupUtility : EditorWindow
         cam.orthographic = true;
         cam.orthographicSize = 5f;
         camObj.transform.position = new Vector3(0, 0, -10f);
+        camObj.AddComponent<CameraFollow>();
 
         // 2. Global Light 2D
         GameObject lightObj = new GameObject("Global Light 2D");
