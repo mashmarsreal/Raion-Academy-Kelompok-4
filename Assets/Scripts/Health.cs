@@ -1,4 +1,5 @@
 
+using System;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ public class Health : MonoBehaviour
     public int maxHealth = 20;
     private int currentHealth;
     public GameObject Coin;
+    public static event Action onDie;
 
     private void Start()
     {
@@ -34,7 +36,8 @@ public class Health : MonoBehaviour
         }
         if (CompareTag("Player"))
         {
-        Debug.Log($"Player Get hit");
+            onDie?.Invoke();
+            Debug.Log($"Player Get hit");
         }
 
         Destroy(gameObject);

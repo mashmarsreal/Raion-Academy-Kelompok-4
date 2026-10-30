@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossBullet : MonoBehaviour
@@ -9,7 +10,12 @@ public class BossBullet : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // panggil fungsi darah Player 
-            Debug.Log("Player kena peluru mini boss!");
+            Health health = other.GetComponent<Health>();
+            if (health != null)
+            {
+                health.TakeDamage(damage);
+                Debug.Log("Player kena peluru mini boss!");
+            }
             Destroy(gameObject);
         }
     }

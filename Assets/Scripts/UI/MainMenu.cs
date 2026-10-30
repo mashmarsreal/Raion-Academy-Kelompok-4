@@ -36,7 +36,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("UI-Arya-Testing");
+        SceneManager.LoadScene("Testing Deploy");
     }
 
     public void ExitGame()

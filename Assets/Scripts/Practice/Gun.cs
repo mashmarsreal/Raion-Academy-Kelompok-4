@@ -8,7 +8,12 @@ public class Gun : MonoBehaviour
     public float fireRate = 0.2f;
 
     private float nextFireTime;
+    private AudioSource gunSound;
 
+    void Start()
+    {
+        gunSound = GetComponent<AudioSource>();
+    }
     private void Update()
     {
         RotateToMouse();
@@ -42,6 +47,8 @@ public class Gun : MonoBehaviour
             Vector2 direction = (mousePosition - firePoint.position).normalized;
 
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+            gunSound.Play();
 
             /*
                 CLUE:

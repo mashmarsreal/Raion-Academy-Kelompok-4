@@ -34,6 +34,7 @@ public class MenuManager : MonoBehaviour
 
     public void RestartScene()
     {
+        Debug.Log($"Test");
         Time.timeScale = 1;
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
@@ -41,12 +42,22 @@ public class MenuManager : MonoBehaviour
 
     public void GameOver()
     {
-        Time.timeScale = 0;
+        // Time.timeScale = 0;
         GameOverUI.SetActive(true);
     }
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(0);
+    }
+
+    void OnEnable()
+    {
+        Health.onDie += GameOver;
+    }
+
+    void OnDisable()
+    {
+        Health.onDie -= GameOver;
     }
 }
