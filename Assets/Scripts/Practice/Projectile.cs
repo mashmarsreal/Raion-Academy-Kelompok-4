@@ -37,16 +37,21 @@ public class Projectile : MonoBehaviour
             collision.CompareTag("Enemy")
         */
         if (collision.CompareTag("Enemy"))
+    {
+      Health health = collision.GetComponent<Health>();
+    MiniBossHealth bossHealth = collision.GetComponent<MiniBossHealth>();
+
+         if (health != null)
         {
-            Health health = collision.GetComponent<Health>();
-
-            if (health != null)
-            {
-                health.TakeDamage(damage);
-            }
-
-            Destroy(gameObject);
+    health.TakeDamage(damage);
         }
+      else if (bossHealth != null)
+       {
+        bossHealth.TakeDamage(damage);
+      }
+
+        Destroy(gameObject);
+    }
     }
 
 }

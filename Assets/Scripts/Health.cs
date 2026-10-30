@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int maxHealth = 3;
+    public int maxHealth = 20;
     private int currentHealth;
     public GameObject Coin;
 
@@ -29,12 +29,12 @@ public class Health : MonoBehaviour
     {
         if (CompareTag("Enemy"))
         {
-            LevelManager.instance.AddKill();
-            Instantiate(Coin, transform.position, Quaternion.identity);
+        LevelManager.instance.AddKill();
+        Instantiate(Coin, transform.position, Quaternion.identity);
         }
         if (CompareTag("Player"))
         {
-            Debug.Log($"Player Get hit");
+        Debug.Log($"Player Get hit");
         }
 
         Destroy(gameObject);
