@@ -8,15 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 5af805d20b3cb824cb2261eb13561ef8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level.unity
     guid: 801afd9b30e4950419cc2038804ab43e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/UI-Arya-Testing.unity
     guid: f6fe74903d106bf4aa7dd76b302b7c1b
   - enabled: 1
     path: Assets/Scenes/MainMenu-Arya.unity
     guid: d4a528b7d27243647a265dd2b4acec01
+  - enabled: 1
+    path: Assets/Scenes/Testing Deploy.unity
+    guid: ee4e61b960793f046b62403cba2e1663
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
